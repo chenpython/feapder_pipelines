@@ -23,7 +23,7 @@
 #### 安装 
 
 ```
-pip install feapder_pipelines[pgsql]
+pip install git+https://github.com/chenpython/feapder_pipelines.git
 ```
 
 #### 使用
