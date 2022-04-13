@@ -203,8 +203,8 @@ def make_batch_sql(
             table=table, keys=keys, values_placeholder=values_placeholder, indexes_cols=indexes_cols, update_all_columns_=update_all_columns_
         )
     else:
-        sql = "insert into {table} {keys} values {values_placeholder} on conflict({indexes_cols}) do nothing".format(
-            table=table, keys=keys, values_placeholder=values_placeholder, indexes_cols=indexes_cols
+        sql = "insert into {table} {keys} values {values_placeholder}".format(
+            table=table, keys=keys, values_placeholder=values_placeholder
         )
 
     return sql, values
